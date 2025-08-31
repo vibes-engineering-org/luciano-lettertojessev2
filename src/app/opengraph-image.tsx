@@ -138,22 +138,45 @@ export default async function Image() {
             {PROJECT_TITLE}
           </h1>
 
-          {/* Project description */}
-          <p
+          {/* Project description and purpose */}
+          <div
             style={{
-              fontSize: "36px",
-              fontWeight: "600",
-              color: "rgba(255, 255, 255, 0.95)",
-              textAlign: "center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
               marginBottom: "56px",
-              lineHeight: 1.3,
-              textShadow: "0 3px 12px rgba(0, 0, 0, 0.4)",
               maxWidth: "800px",
-              fontFamily: "system-ui, -apple-system, sans-serif",
             }}
           >
-            {PROJECT_DESCRIPTION}
-          </p>
+            <p
+              style={{
+                fontSize: "36px",
+                fontWeight: "600",
+                color: "rgba(255, 255, 255, 0.95)",
+                textAlign: "center",
+                marginBottom: "20px",
+                lineHeight: 1.3,
+                textShadow: "0 3px 12px rgba(0, 0, 0, 0.4)",
+                fontFamily: "system-ui, -apple-system, sans-serif",
+              }}
+            >
+              {PROJECT_DESCRIPTION}
+            </p>
+            <p
+              style={{
+                fontSize: "28px",
+                fontWeight: "500",
+                color: "rgba(255, 255, 255, 0.85)",
+                textAlign: "center",
+                lineHeight: 1.4,
+                textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+                fontFamily: "system-ui, -apple-system, sans-serif",
+                fontStyle: "italic",
+              }}
+            >
+              Share your thoughts and connect through letters
+            </p>
+          </div>
 
           {/* Farcaster branding element */}
           <div
